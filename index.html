@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>
+            selectors
+        </title>
+    </head>
+    <style>
+        /* Universal selector */
+        *{
+            font-weight: bold;
+        }
+        /* element selector */
+        body{
+            background-color: aquamarine;
+        }
+        /* class selector */
+        .title{
+            color: blue;
+        }
+        /* id selector */
+        #list{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: underline;
+        }
+        /* attribute selector */
+        li[class]{
+            color: red;
+        }
+        /* pseudo selector */
+        button:hover {
+        background:rgb(138, 138, 154)
+        }
+         /* Tree-structural pseudo-classes selectors */
+        li:nth-last-child(2){
+            color:red;
+        }
+        /* grouping selector */
+        #th,#btn{
+            background-color: darkmagenta;
+        }
+        /* nested selector */
+        #list li{
+            font-size: larger;
+        }
+        /* Child Selector */
+        p > span {
+            color:blueviolet;
+        }
+        /* Adjacent Sibling Selector */
+        #first+li {
+            color: blue;
+        }   
+
+    </style>
+    <body>
+        
+        <h1 class="title">
+            Demonstration of CSS selectors
+        </h1>
+        <ul id="list">
+            <li class="ul">selectors</li>
+            <li class="ul">selectors</li>
+            <li id="first">selectors</li>
+            <li>selectors</li>
+            <li>selectors</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span disabled>Quod qui iusto perferendis</span> nisi officia quidem ad enim maiores animi maxime.</p>
+        <h2 id="th">android better than ios</h2>
+        <button id="btn">Do you like selector?</button>
+    </body>
+</html>
